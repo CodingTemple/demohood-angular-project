@@ -10,6 +10,9 @@ import { GoogleSigninDirective } from './google-signin.directive';
   declarations: [EmailLoginComponent, LoginPageComponent, GoogleSigninDirective],
   imports: [
     CommonModule
+  ],
+  exports: [
+    LoginPageComponent
   ]
 })
 export class UserModule { }

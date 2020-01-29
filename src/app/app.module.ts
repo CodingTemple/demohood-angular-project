@@ -17,6 +17,7 @@ import { environment } from '../environments/environment';
 
 import { SharedModule } from './shared/shared.module';
 
+import { UserModule } from './user/user.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -28,7 +29,8 @@ import { SharedModule } from './shared/shared.module';
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    SharedModule
+    SharedModule,
+    UserModule //Remember this will go away
   ],
   providers: [],
   bootstrap: [AppComponent]

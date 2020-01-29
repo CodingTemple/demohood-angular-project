@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AuthService } from '../../services/auth.service';
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authserv:AuthService) { }
+
+  showUserData(){
+    console.log(this.authserv.getUserInfo())
+    console.log(this.authserv.getCurrentUser())
+  }
 
   ngOnInit() {
   }
