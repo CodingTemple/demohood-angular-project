@@ -1,5 +1,8 @@
 # Demohood
+Step2b -- LoginPageComponent
+The current code for the login page / emaillogin page can be found in email/email-login.component.ts
 
+It will show what is needed to get the correct information from the form. This excludes HTML currently
 ---
 The code present is for the newest updated version of demohood. This branch displays the code needed for created the shared module, shell component and the connecting everything together.
 
