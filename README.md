@@ -1,5 +1,19 @@
 # Demohood
 
+---
+The code present is for the newest updated version of demohood. This branch displays the code needed for created the shared module, shell component and the connecting everything together.
+
+The terminal commands to get started are:
+`ng g m shared`
+`ng g c shared/shell`
+`ng g m user`
+`ng g c user/emailLogin`
+`ng g c user/loginPage`
+`ng g d user/googleSignIn --flat`
+`ng g m user/userRouting --flat`
+`ng g s services/auth`
+`ng g s services/snack --flat`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
 ## Development server
