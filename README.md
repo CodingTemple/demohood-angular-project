@@ -1,4 +1,11 @@
 # Demohood
+---
+Step2c -- FinishedLoginFlow
+Created HTML for `email/email.component.html`
+Added validation in the same file for on client-side validation
+Created googleSignIn directive using the Google firebase provider
+-- That can be found in `user/googleSignInDirective.ts` --
+
 Step2b -- LoginPageComponent
 The current code for the login page / emaillogin page can be found in email/email-login.component.ts
 

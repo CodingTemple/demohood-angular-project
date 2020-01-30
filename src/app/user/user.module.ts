@@ -4,12 +4,18 @@ import { EmailLoginComponent } from './email-login/email-login.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { GoogleSigninDirective } from './google-signin.directive';
 
+// Import for Shared Module in order to use angular material
+import { SharedModule } from '../shared/shared.module';
 
+// Import for ReactiveForms
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [EmailLoginComponent, LoginPageComponent, GoogleSigninDirective],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule,
+    ReactiveFormsModule
   ],
   exports: [
     LoginPageComponent

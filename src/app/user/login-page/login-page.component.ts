@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../services/auth.service';
+import { AngularFireAuth } from '@angular/fire/auth';
+// import { AuthService } from '../../services/auth.service';
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
@@ -7,12 +8,12 @@ import { AuthService } from '../../services/auth.service';
 })
 export class LoginPageComponent implements OnInit {
 
-  constructor(private authserv:AuthService) { }
+  constructor(private afAuth: AngularFireAuth) { }
 
-  showUserData(){
-    console.log(this.authserv.getUserInfo())
-    console.log(this.authserv.getCurrentUser())
-  }
+  // showUserData(){
+  //   console.log(this.authserv.getUserInfo())
+  //   console.log(this.authserv.getCurrentUser())
+  // }
 
   ngOnInit() {
   }
