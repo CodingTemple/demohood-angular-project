@@ -29,8 +29,7 @@ import { UserModule } from './user/user.module';
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    SharedModule,
-    UserModule //Remember this will go away
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
